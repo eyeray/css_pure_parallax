@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>background-scrolling</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Lobster" rel="stylesheet">
     <style>
         *{
             margin: 0;
             padding: 0;
         }
-
+        .scene{
+            position: relative;;
+        }
         .scene.one{
             /*loremp에서 이미지 가져오기*/
             width:100vw;
@@ -48,6 +52,7 @@
 
         }
         .scene.five{
+
             /*loremp에서 이미지 가져오기*/
             width:100vw;
             height:100vh;
@@ -56,23 +61,70 @@
             background-attachment: fixed;
 
         }
+        .scene>header{
+            font-size: 1em;
+            width:80vw;
+            height:10vh;
+            margin: 0 auto;
+            position: absolute;
+            left:50%;
+            top:50%;
+            transform:translate(-50%,-50%);
+
+        }
+        .scene>header>h1{
+            font-family: 'Lobster', cursive;
+            color: white;
+            font-size:3em;
+            text-shadow: 0 0 10px rgba(0,0,0,0.8);
+            text-align: center;
+        }
+        .scene>header>p{
+            font-family: 'Abel', sans-serif;
+            color:rgba(255,255,255,0.8);
+            text-shadow: 0 0 3px rgba(0,0,0,0.8);
+            text-align: center;
+        }
+        .scene>header>h1:after{
+            display:block;
+            content:'';
+            border-bottom: 1px solid rgba(255,255,255,0.5);
+            width:80%;
+            margin: 0.2em auto;
+        }
+
     </style>
 </head>
 <body>
     <section class="scene one">
-
+        <header>
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </header>
     </section>
     <section class="scene two">
-
+        <header>
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </header>
     </section>
     <section class="scene three">
-
+        <header>
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </header>
     </section>
     <section class="scene four">
-
+        <header>
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </header>
     </section>
     <section class="scene five">
-
+        <header>
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </header>
     </section>
 </body>
 </html>
