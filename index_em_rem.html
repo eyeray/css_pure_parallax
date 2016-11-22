@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>parallax</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size:16px;
+            color:black;
+        }
+        .scene{
+            position: relative;
+            width:500px;
+            height:300px;
+            border:1px solid rgba(0,0,0,0.5);
+
+
+        }
+        .scene>#em{
+            width:50vw;
+            height:100px;
+            background: red;
+            margin:5px;
+            color:white;
+            font-size:1.5em;
+        }
+        .scene>#rem{
+            width:50%;
+            height:100px;
+            background: blue;
+            margin:5px;
+            color:white;
+            font-size:1.5rem;
+        }
+        .scene>#em>#em_child{
+            font-size:1.5em
+
+        }
+        .scene>#rem>#rem_child{
+            font-size:1.5rem
+
+        }
+    </style>
+</head>
+<body>
+    <section class="scene one">
+        나 부모지 : 500px의 크기를 가지고 있어
+        <div id="em">
+            난 em
+            <div id="em_child">
+                난 em 자식
+            </div>
+        </div>
+        <div id="rem">
+            난 rem
+            <div id="rem_child">
+                난 rem 자식
+            </div>
+        </div>
+    </section>
+</body>
+</html>
