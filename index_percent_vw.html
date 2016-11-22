@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>parallax</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        html,body{
+
+        }
+        .scene{
+            position: relative;
+            width:500px;
+            height:200px;
+            border:1px solid rgba(0,0,0,0.5);
+
+        }
+        .scene>#vw{
+            width:50vw;
+            height:50px;
+            background: red;
+            margin:5px;
+
+        }
+        .scene>#percentage{
+            width:50%;
+            height:50px;
+            background: blue;
+            margin:5px;
+
+        }
+    </style>
+</head>
+<body>
+    <section class="scene one">
+        나 부모지 : 500px의 크기를 가지고 있어
+        <div id="vw">난 자식이야:vw단위의 크기를 갖지</div>
+        <div id="percentage">나도 자식인데:percentage단위의 크기를 갖지</div>
+    </section>
+</body>
+</html>
